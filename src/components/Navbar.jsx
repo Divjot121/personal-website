@@ -14,10 +14,18 @@ const Navbar = () => {
         </h2>
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
-        <FaSquareXTwitter />
-        <FaInstagram />
+        <a href="https://www.linkedin.com/in/divjot-aroraa/">
+        <FaLinkedin className='text-white transition ease-in-out delay-100 hover:-translate-y-1' cursor={"pointer"}></FaLinkedin>
+        </a>
+        <a href="https://www.github.com/divjot121/">
+        <FaGithub className='text-white transition ease-in-out delay-100 hover:-translate-y-1' cursor={"pointer"}></FaGithub>
+        </a>
+        <a href="https://www.x.com/divjot121/">
+        <FaSquareXTwitter className='text-white transition ease-in-out delay-100 hover:-translate-y-1' cursor={"pointer"}></FaSquareXTwitter>
+        </a>
+        <a href="https://www.instagram.com/divjotsingharora/">
+        <FaInstagram className='text-white transition ease-in-out delay-100 hover:-translate-y-1' cursor={"pointer"}></FaInstagram>
+        </a>
       </div>
     </nav>
   );

@@ -19,7 +19,11 @@ const Hero = () => {
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
-            <img  style={{ borderRadius: '10px' }} src={profilePic} alt="Divjot Singh" />
+            <img
+              className="rounded-2xl"
+              src={profilePic}
+              alt="Divjot Singh"
+            />
           </div>
         </div>
       </div>
