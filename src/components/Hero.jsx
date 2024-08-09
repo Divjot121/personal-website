@@ -54,7 +54,7 @@ const Hero = () => {
                   animate="visible"
                   className="rounded-lg border my-2 px-6 py-3 border-blue-900 bg-gradient-to-r from-cyan-500 via-blue-600 to-blue-800 text-white shadow-lg hover:from-purple-600 hover:to-pink-600 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1"
                 >
-                  My Achievements
+                  About Me!
                 </motion.button>
               </a>
             </div>
