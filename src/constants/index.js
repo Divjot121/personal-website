@@ -1,7 +1,7 @@
-import netflix from "../assets/projects/Netflix.png";
-import prognet from "../assets/projects/prognet.png";
-import portfolio from "../assets/projects/portfolio.png";
-import engage_edge from "../assets/projects/engage-edge.png";
+import netflix from "../assets/projects/Netflix.webp";
+import prognet from "../assets/projects/prognet.webp";
+import portfolio from "../assets/projects/portfolio.webp";
+import engage_edge from "../assets/projects/engage-edge.webp";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB, as well as programming languages like Java, Python and Javascript. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
