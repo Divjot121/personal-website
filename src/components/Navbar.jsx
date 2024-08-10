@@ -14,25 +14,25 @@ const Navbar = () => {
         </h2>
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <a href="https://www.linkedin.com/in/divjot-aroraa/">
+        <a href="https://www.linkedin.com/in/divjot-aroraa/" aria-label="Linkedin Link">
           <FaLinkedin
             className="text-white transition ease-in-out delay-100 hover:-translate-y-1"
             cursor={"pointer"}
           ></FaLinkedin>
         </a>
-        <a href="https://www.github.com/divjot121/">
+        <a href="https://www.github.com/divjot121/" aria-label="Github Link">
           <FaGithub
             className="text-white transition ease-in-out delay-100 hover:-translate-y-1"
             cursor={"pointer"}
           ></FaGithub>
         </a>
-        <a href="https://www.x.com/divjot121/">
+        <a href="https://www.x.com/divjot121/" aria-label="X formerly known as Twitter Link">
           <FaSquareXTwitter
             className="text-white transition ease-in-out delay-100 hover:-translate-y-1"
             cursor={"pointer"}
           ></FaSquareXTwitter>
         </a>
-        <a href="https://www.instagram.com/divjotsingharora/">
+        <a href="https://www.instagram.com/divjotsingharora/" aria-label="Instagram Link">
           <FaSquareInstagram
             className="text-white transition ease-in-out delay-100 hover:-translate-y-1"
             cursor={"pointer"}
