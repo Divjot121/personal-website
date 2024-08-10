@@ -30,10 +30,10 @@ const Experience = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold">
+              <h5 className="mb-2 font-semibold">
                 {experience.role} -{" "}
                 <span className="font-bold">{experience.company}</span>{" "}
-              </h6>
+              </h5>
               <p className="mb-4 text-neutral-400 text-justify">
                 {experience.description}
               </p>
