@@ -28,12 +28,14 @@ const Contact = () => {
 
   // Set up animation control
   const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.1 });
 
   // Trigger animation when in view
   React.useEffect(() => {
     if (inView) {
       controls.start("visible");
+    } else {
+      controls.start("hidden");
     }
   }, [controls, inView]);
 
@@ -175,4 +177,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact;a
