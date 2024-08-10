@@ -109,7 +109,7 @@ const Contact = () => {
       <motion.form
         ref={ref}
         onSubmit={handleSubmit}
-        variants={container(1)}
+        variants={container(0.7)}
         initial="hidden"
         animate={controls}
       >
@@ -122,7 +122,7 @@ const Contact = () => {
             value={formData.name}
             placeholder="Name"
             onChange={handleChange}
-            variants={container(1.2)}
+            variants={container(1)}
             className="w-full appearance-none rounded-lg border border-slate-800 bg-transparent px-3 py-2 text-sm focus:border-gray-400 focus:outline-none"
           />
           {errors.name && (
@@ -138,7 +138,7 @@ const Contact = () => {
             value={formData.email}
             placeholder="Email"
             onChange={handleChange}
-            variants={container(1.4)}
+            variants={container(1.2)}
             className="w-full appearance-none rounded-lg border border-slate-800 bg-transparent px-3 py-2 text-sm focus:border-gray-400 focus:outline-none"
           />
           {errors.email && (
@@ -153,7 +153,7 @@ const Contact = () => {
             value={formData.message}
             placeholder="Message"
             onChange={handleChange}
-            variants={container(1.6)}
+            variants={container(1.4)}
             className="w-full appearance-none rounded-lg border border-slate-800 bg-transparent px-3 py-2 text-sm focus:border-gray-400 focus:outline-none"
           />
           {errors.message && (
@@ -165,7 +165,7 @@ const Contact = () => {
             ref={ref}
             type="submit"
             disabled={isSending}
-            variants={container(1.8)}
+            variants={container(1.6)}
             className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
             animate={controls}
           >
