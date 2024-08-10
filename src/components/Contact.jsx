@@ -3,6 +3,18 @@
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import emailjs from "emailjs-com";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+// Define animation variants
+const container = (delay) => ({
+  hidden: { x: -100, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.5, delay: delay },
+  },
+});
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +25,17 @@ const Contact = () => {
 
   const [errors, setErrors] = useState({});
   const [isSending, setIsSending] = useState(false);
+
+  // Set up animation control
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+
+  // Trigger animation when in view
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -72,18 +95,32 @@ const Contact = () => {
   return (
     <div className="mx-auto max-w-xl p-4">
       <Toaster />
-      <h2 className="my-12 text-center text-2xl font-semibold uppercase tracking-wide text-slate-100">
+      <motion.h2
+        ref={ref}
+        variants={container(0.5)}
+        initial="hidden"
+        animate={controls}
+        className="my-12 text-center text-2xl font-semibold uppercase tracking-wide text-slate-100"
+      >
         Get In Touch!
-      </h2>
-      <form onSubmit={handleSubmit}>
+      </motion.h2>
+      <motion.form
+        ref={ref}
+        onSubmit={handleSubmit}
+        variants={container(1)}
+        initial="hidden"
+        animate={controls}
+      >
         <div className="mb-4">
-          <input
+          <motion.input
+            ref={ref}
             type="text"
             id="name"
             name="name"
             value={formData.name}
             placeholder="Name"
             onChange={handleChange}
+            variants={container(1.2)}
             className="w-full appearance-none rounded-lg border border-slate-800 bg-transparent px-3 py-2 text-sm focus:border-gray-400 focus:outline-none"
           />
           {errors.name && (
@@ -91,13 +128,15 @@ const Contact = () => {
           )}
         </div>
         <div className="mb-4">
-          <input 
+          <motion.input
+            ref={ref}
             type="email"
             id="email"
             name="email"
             value={formData.email}
             placeholder="Email"
             onChange={handleChange}
+            variants={container(1.4)}
             className="w-full appearance-none rounded-lg border border-slate-800 bg-transparent px-3 py-2 text-sm focus:border-gray-400 focus:outline-none"
           />
           {errors.email && (
@@ -105,12 +144,14 @@ const Contact = () => {
           )}
         </div>
         <div className="mb-4">
-          <textarea
+          <motion.textarea
+            ref={ref}
             id="message"
             name="message"
             value={formData.message}
             placeholder="Message"
             onChange={handleChange}
+            variants={container(1.6)}
             className="w-full appearance-none rounded-lg border border-slate-800 bg-transparent px-3 py-2 text-sm focus:border-gray-400 focus:outline-none"
           />
           {errors.message && (
@@ -118,15 +159,18 @@ const Contact = () => {
           )}
         </div>
         <div className="text-center">
-          <button
+          <motion.button
+            ref={ref}
             type="submit"
             disabled={isSending}
+            variants={container(1.8)}
             className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
+            animate={controls}
           >
             {isSending ? "Sending..." : "Send Message"}
-          </button>
+          </motion.button>
         </div>
-      </form>
+      </motion.form>
     </div>
   );
 };

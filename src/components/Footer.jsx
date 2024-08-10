@@ -7,7 +7,7 @@ const Footer = () => {
           initial={{opacity:0,x:-100}}
           transition={{duration:1}} className="container mx-auto text-center">
             <p className="text-white text-xl">
-              Developed with <span className="text-red-500">❤</span> by Divjot Singh Arora
+               Made with <span className="text-red-500">❤</span> by Divjot Singh Arora
             </p>
           </motion.div>
         </footer>
