@@ -63,16 +63,18 @@ const Hero = () => {
 
         {/* Right side image */}
         <div className="w-full lg:w-1/2 lg:p-3">
-          <div className="flex justify-center lg:justify-end">
-            <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 1.2 }}
+            className="flex items-center justify-center"
+          >
+            <img
               src={profilePic}
-              alt="Divjot Singh"
-              className="max-w-xs lg:max-w-md h-auto rounded-2xl  cursor-pointer  hover:scale-110"
-            ></motion.img>
-          </div>
+              alt="About"
+              className="max-w-xs lg:max-w-md h-auto relative z-0 rounded-lg transition-all duration-300 cursor-pointer hover:scale-110"
+            ></img>
+          </motion.div>
         </div>
       </div>
     </div>
