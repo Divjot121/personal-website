@@ -72,7 +72,7 @@ const Hero = () => {
             <img
               src={profilePic}
               alt="About"
-              className="max-w-xs lg:max-w-md h-auto relative z-0 rounded-lg transition-all duration-300 cursor-pointer hover:scale-110"
+              className="max-w-xs lg:max-w-md h-auto relative z-0 rounded-lg transition-all duration-300 cursor-pointer width={300} height={300} hover:scale-110"
             ></img>
           </motion.div>
         </div>

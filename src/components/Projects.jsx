@@ -28,7 +28,7 @@ const Projects = () => {
                 alt={project.title}
                 width={300}
                 height={300}
-                className="rounded-md"
+                className="rounded-md width={300} height={300} cursor-pointer hover:scale-110"
               />
             </div>
             <motion.div
