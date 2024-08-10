@@ -1,6 +1,7 @@
 import React from "react";
 import { EXPERIENCES } from "../constants";
 import { motion } from "framer-motion";
+import { RiH3 } from "react-icons/ri";
 const Experience = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
@@ -30,10 +31,10 @@ const Experience = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h5 className="mb-2 font-semibold">
+              <h3 className="mb-2 font-semibold">
                 {experience.role} -{" "}
                 <span className="font-bold">{experience.company}</span>{" "}
-              </h5>
+              </h3>
               <p className="mb-4 text-neutral-400 text-justify">
                 {experience.description}
               </p>
