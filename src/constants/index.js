@@ -1,7 +1,7 @@
 import netflix from "../assets/projects/Netflix.png";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import prognet from "../assets/projects/prognet.png";
+import portfolio from "../assets/projects/portfolio.png";
+import engage_edge from "../assets/projects/engage-edge.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB, as well as programming languages like Java, Python and Javascript. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -42,37 +42,38 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image:  netflix,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    title: "Netflix Clone",
+    image: netflix,
+    description: "A basic ott giant ott giant netflix's clone website",
+    technologies: ["HTML", "CSS", "Js"],
+    github: "https://github.com/Divjot121/netflix-clone",
+    live: "https://netflix-clone-divjot121.vercel.app/",
   },
   {
-    title: "Task Management App",
-    image: project2,
+    title: "PROGNET.",
+    image: prognet,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "An application for getting resoource and projects idea, with features such as chat with community, get coding assignments etc..",
+    technologies: ["HTML", "CSS", "Js", "Tailwind CSS", "Firebase", "Flutter"],
+    github: "https://github.com/Divjot121/PROGNET.",
+    live: "https://prognet.in/",
   },
   {
     title: "Portfolio Website",
-    image: project3,
+    image: portfolio,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    technologies: ["HTML", "CSS", "React", "Node Js", "Tailwind CSS"],
+    github: "https://github.com/Divjot121/personal-website",
+    live: "https://divjotsingh.com/",
   },
   {
-    title: "Blogging Platform",
-    image: project4,
+    title: "Engage Edge",
+    image: engage_edge,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A website for a digital marketing agency and publishing blog posts.",
+    technologies: ["HTML", "CSS", "Js"],
+    github: "https://github.com/Divjot121/Engage-Edge-Tech",
+    live: "https://engageedge.in/",
   },
 ];
-
-export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
-};
