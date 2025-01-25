@@ -25,7 +25,7 @@ const Hero = () => {
               animate="visible"
               className="pb-14 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl transition duration-700 ease-in-out relative after:absolute after:left-0 after:bottom-0 after:top-20 after:w-full after:h-[2px] after:bg-violet-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 after:ease-in-out hover:after:scale-x-100"
             >
-              Divjot Singh
+              Divjot Singh Arora
             </motion.h1>
             <motion.span
               variants={container(1)}
